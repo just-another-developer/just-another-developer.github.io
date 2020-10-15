@@ -20,6 +20,8 @@ layout: default
     {{ content }}
   </div>
 
+  {% include english_disclaimer.html html=content %}
+
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
   {%- endif -%}
